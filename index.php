@@ -8,7 +8,8 @@ function adminer_object()
     foreach (glob(__DIR__ . '/plugins/*.php') as $filename) {
         include_once $filename;
     }
-    $servers = is_file($serverConfig = __DIR__ . '/config/servers.php') ? include $serverConfig : [];
+    $config = is_file($configFile = __DIR__ . '/config/local/config.php') ? include $configFile : [];
+    $servers = is_file($serverConfigFile = __DIR__ . '/config/local/servers.php') ? include $serverConfigFile : [];
 
     $plugins = [
         new AdminerLoginServers($servers),
@@ -16,8 +17,8 @@ function adminer_object()
         new AdminerDumpDate,
         new AdminerTablesFilter,
         new AdminerLogoLink,
-        new AdminerLoginPasswordLess(),
     ];
+    empty($config['development_mode']) or $plugins[] = new AdminerLoginPasswordLess();
 
     return new AdminerPlugin($plugins);
 }
