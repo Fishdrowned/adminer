@@ -8,8 +8,8 @@
 1. Enjoy
 
 ### Containing
-* Adminer 4.6.3
-* Theme `pepa-linha` [Modified]
+* [Adminer 4.6.3](https://github.com/vrana/adminer/releases/tag/v4.6.3)
+* Theme `pepa-linha` [[Modified]](designs/pepa-linha/fix.css)
 * Plugins:
     - login-servers
     - dump-bz2
