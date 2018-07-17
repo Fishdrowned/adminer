@@ -9,7 +9,7 @@
 
 ### Containing
 * Adminer 4.6.3
-* Theme `pepa-linha`
+* Theme `pepa-linha` [Modified]
 * Plugins:
     - login-servers
     - dump-bz2

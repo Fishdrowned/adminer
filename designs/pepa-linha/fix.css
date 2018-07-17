@@ -1,0 +1,32 @@
+#breadcrumb{
+    position:initial;
+}
+#content{
+    bottom:0;
+    left:347px;
+    margin-left:0;
+    margin-right:0;
+    overflow:auto;
+    padding:12px;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.footer{
+    bottom:-12px;
+}
+.logout, .rtl .logout{
+    left:230px;
+    right:auto;
+    top:25px;
+    z-index:10;
+}
+#lang{
+    top:60px;
+}
+#lang select{
+    -webkit-appearance:menulist;
+    -moz-appearance:menulist;
+    appearance:menulist;
+    width:100px;
+}

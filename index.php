@@ -17,6 +17,7 @@ function adminer_object()
         new AdminerDumpDate,
         new AdminerTablesFilter,
         new AdminerLogoLink,
+        new PepaLinhaFix,
     ];
     empty($config['development_mode']) or $plugins[] = new AdminerLoginPasswordLess();
 
