@@ -11,6 +11,7 @@ function adminer_object()
     $config = is_file($configFile = __DIR__ . '/config/local/config.php') ? include $configFile : [];
     $servers = is_file($serverConfigFile = __DIR__ . '/config/local/servers.php') ? include $serverConfigFile : [];
 
+    $adminer = new AdminerPlugin([]);
     $plugins = [
         new AdminerLoginServers($servers),
         new AdminerDumpBz2,
@@ -18,14 +19,15 @@ function adminer_object()
         new AdminerTablesFilter,
         new AdminerLogoLink,
         new AdminerEnumOption,
-        new AdminerPrettyJsonColumn,
+        new AdminerPrettyJsonColumn($adminer),
         new AdminerTableStructure,
         new AdminerTableIndexesStructure,
         new PepaLinhaFix,
     ];
     empty($config['development_mode']) or $plugins[] = new AdminerLoginPasswordLess;
+    $adminer->plugins = $plugins;
 
-    return new AdminerPlugin($plugins);
+    return $adminer;
 }
 
 // include original Adminer or Adminer Editor
