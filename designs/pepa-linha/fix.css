@@ -28,5 +28,9 @@
     -webkit-appearance:menulist;
     -moz-appearance:menulist;
     appearance:menulist;
-    width:100px;
+    background:#ddd;
+    border:1px solid #ccc;
+    height:32px;
+    padding:5px 0;
+    width:101px;
 }
