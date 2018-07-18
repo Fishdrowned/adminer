@@ -17,9 +17,13 @@ function adminer_object()
         new AdminerDumpDate,
         new AdminerTablesFilter,
         new AdminerLogoLink,
+        new AdminerEnumOption,
+        new AdminerPrettyJsonColumn,
+        new AdminerTableStructure,
+        new AdminerTableIndexesStructure,
         new PepaLinhaFix,
     ];
-    empty($config['development_mode']) or $plugins[] = new AdminerLoginPasswordLess();
+    empty($config['development_mode']) or $plugins[] = new AdminerLoginPasswordLess;
 
     return new AdminerPlugin($plugins);
 }

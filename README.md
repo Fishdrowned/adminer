@@ -16,6 +16,10 @@
     - dump-date
     - tables-filter
     - logo-link
+    - enum-option
+    - pretty-json-column
+    - table-indexes-structure
+    - table-structure
     - login-password-less (for `development_mode` only)
 
 ### License
