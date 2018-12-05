@@ -1,1 +1,1 @@
-adminer/adminer-4.6.3-mysql.php
+adminer/adminer-4.7.0-mysql.php
