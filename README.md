@@ -2,10 +2,13 @@
 
 ### Usage
 1. Clone this repository and configure web root
+    ```bash
+    git clone --single-branch -b deploy https://github.com/Fishdrowned/adminer.git
+    ```
 1. Copy `config/sample/` to `config/local/` [Optional]
 1. Edit `config/local/config.php` to set `development_mode` [Optional]
 1. Edit `config/local/servers.php` to add your servers [Optional]
-1. Enjoy
+1. Serve directory `public` via http and enjoy
 
 ### Containing
 * [Adminer 4.6.3](https://github.com/vrana/adminer/releases/tag/v4.6.3)
