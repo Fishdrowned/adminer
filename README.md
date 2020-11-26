@@ -11,7 +11,7 @@
 1. Serve directory `public` via http and enjoy
 
 ### Containing
-* [Adminer for MySQL 4.7.0](https://github.com/vrana/adminer/releases/tag/v4.7.0)
+* [Adminer for MySQL 4.7.7](https://github.com/vrana/adminer/releases/tag/v4.7.7)
 * Theme `pepa-linha` [[Modified]](public/designs/pepa-linha/fix.css)
 * Plugins:
     - login-servers
